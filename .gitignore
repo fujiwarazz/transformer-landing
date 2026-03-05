@@ -5,3 +5,5 @@ node_modules/
 *.swp
 .DS_Store
 public/
+.vercel
+.env*.local
