@@ -1,1 +1,7 @@
-.vercel
+# .gitignore
+node_modules/
+*.log
+.env
+*.swp
+.DS_Store
+public/
