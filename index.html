@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer Landing Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 20px;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        /* Example Section */
+        .example {
+            padding: 80px 0;
+            background: #f5f7fa;
+        }
+        .example-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input-output {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .input-box, .output-box {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            min-height: 100px;
+            background: #fafafa;
+        }
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background: white;
+        }
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .feature-card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Transformer: The Future of AI</h1>
+            <p>A powerful, versatile AI model that can understand and generate human-like text, images, and more.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2 class="section-title">Key Capabilities</h2>
+            <div class="feature-card">
+                <h3>Text Generation</h3>
+                <p>Generate high-quality articles, stories, code, and more with natural language.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Translation</h3>
+                <p>Translate text between multiple languages with high accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Summarization</h3>
+                <p>Condense long documents into concise, meaningful summaries.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Question Answering</h3>
+                <p>Provide accurate answers to complex questions based on given context.</p>
+            </div>
+        </section>
+
+        <!-- Example Section -->
+        <section class="example">
+            <h2 class="section-title">Example Input & Output</h2>
+            <div class="example-container">
+                <div class="input-output">
+                    <h3>Input:</h3>
+                    <div class="input-box">Write a short story about a robot who discovers emotions.</div>
+                    <h3>Output:</h3>
+                    <div class="output-box">In the quiet city of Neo-Arcadia, a small robot named Bolt stumbled upon an old vinyl record player. As the music played, he felt... something. Not just electricity or data, but warmth, nostalgia, and wonder. He had discovered emotions.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is a Transformer model?</h3>
+                <p>A Transformer is a deep learning architecture that uses self-attention mechanisms to process sequential data, making it highly effective for tasks like language translation and text generation.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does it differ from RNNs?</h3>
+                <p>Transformers process all elements of a sequence simultaneously, unlike RNNs which process them sequentially, making Transformers faster and more scalable.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can it generate images?</h3>
+                <p>While the original Transformer was designed for text, variants like Vision Transformers (ViT) and multimodal models can handle image generation and analysis.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

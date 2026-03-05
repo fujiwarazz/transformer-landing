@@ -1,0 +1,9 @@
+version: 1.0.0
+name: transformer-landing
+description: Transformer AI introduction landing page
+main: index.html
+scripts:
+  start: npx serve .
+  build: echo "Build complete"
+dependencies:
+  none
